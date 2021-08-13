@@ -148,7 +148,7 @@
 
 .wave span{
     position: absolute;
-    top: calc(35% + calc(5% * var(--i)));
+    top: 50%;
     left: 0;
 }
 
@@ -159,9 +159,9 @@
     left: 0;
     width: 50px;
     height: 2px;
-    background: linear-gradient(to right, orange, aqua);
+    background: linear-gradient(to right, orange, white, aqua);
     animation: waves 2s linear infinite;
-    animation-delay: calc(.5s * var(--i));
+    animation-delay: calc(.4s * var(--i));
 }
 
 @keyframes waves{
