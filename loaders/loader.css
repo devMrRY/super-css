@@ -159,7 +159,7 @@
     left: 0;
     width: 50px;
     height: 2px;
-    background: linear-gradient(to right, orange, white, aqua);
+    background: linear-gradient(to right, transparent, aqua);
     animation: waves 2s linear infinite;
     animation-delay: calc(.4s * var(--i));
 }
