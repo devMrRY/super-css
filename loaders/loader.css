@@ -137,7 +137,7 @@
 /***************** WAVE LOADERS *****************/
 
 .wave{
-    width: 300px;
+    width: 50px;
     height: 100px;
     position: relative;
     display: flex;
@@ -148,7 +148,7 @@
 
 .wave span{
     position: absolute;
-    top: calc(40% + calc(10% * var(--i)));
+    top: calc(35% + calc(5% * var(--i)));
     left: 0;
 }
 
@@ -157,19 +157,31 @@
     content: '';
     top: 0;
     left: 0;
-    width: 300px;
-    height: 21px;
+    width: 50px;
+    height: 2px;
     background: linear-gradient(to right, orange, aqua);
-    animation: waves 1s linear infinite;
-    transform: skew(120deg, 150deg);
+    animation: waves 2s linear infinite;
+    animation-delay: calc(.5s * var(--i));
 }
 
 @keyframes waves{
     0%{
-        transform: skew(150deg);
+        transform: rotate(0);
+    }
+    12.5%{
+        transform: rotate(calc(1 * 72deg));
+    }
+    25%{
+        transform: rotate(calc(2 * 72deg));
+    }
+    50%{
+        transform: rotate(calc(3 * 72deg));
+    }
+    75%{
+        transform: rotate(calc(4 * 72deg));
     }
     100%{
-        transform: skew(120deg);
+        transform: rotate(calc(5 * 72deg));
     }
 }
 
