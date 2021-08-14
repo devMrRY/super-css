@@ -228,3 +228,60 @@
 }
 
 /***************** END TEXT LOADER *************/
+
+/***************** TEXT SLIDER *****************/
+
+.text-slider{
+    margin-top: 20px;
+    position: relative;
+}
+
+.text-slider span{
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    animation: slidetext 2s linear infinite;
+    animation-delay: calc(.3s * var(--i));
+}
+
+@keyframes slidetext{
+    0%{
+        transform: translateX(-50px);
+        letter-spacing: 10px;
+        color: black;
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+    }
+    50%{
+        letter-spacing: -10px;
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(50px);
+        letter-spacing: 10px;
+        color: white;
+        opacity: 0;
+    }
+}
+
+/***************** END TEXT SLIDER *************/
+
+/***************** TILT TEXT ******************/
+
+.tilt-text{
+    margin-top: 20px;
+    position: relative;
+}
+
+.tilt-text span{
+    color: white;
+}
+.tilt-text span:nth-child(7){
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+/***************** END TILT TEXT *************/
