@@ -281,7 +281,67 @@
 }
 .tilt-text span:nth-child(7){
     position: absolute;
-    transform: rotate(45deg);
+    /* transform: rotate(45deg); */
+    animation: bounce 7s ease-in-out infinite;
+}
+
+@keyframes bounce{
+    0%{
+        top: -30px;
+        left: -5px;
+    }
+    10%{
+        top: -10px;
+        left: -2px;
+    }
+    17.5%{
+        top: -20px;
+        left: 7px;
+    }
+    25%{
+        top: -10px;
+        left: 13px;
+    }
+    32.5%{
+        top: -20px;
+        left: 19px;
+    }
+    40%{
+        top: -10px;
+        left: 27px;
+    }
+    47.5%{
+        top: -20px;
+        left: 33px;
+    }
+    55%{
+        top: -10px;
+        left: 40px;
+    }
+    62.5%{
+        top: -20px;
+        left: 46px;
+    }
+    70%{
+        top: -10px;
+        left: 53px;
+    }
+    77.5%{
+        top: -20px;
+        left: 59px;
+    }
+    85%{
+        top: -10px;
+        left: 67px;
+    }
+    92.5%{
+        top: -20px;
+        left: 75px;
+    }
+    100%{
+        top: 0px;
+        left: 80px;
+    }
 }
 
 /***************** END TILT TEXT *************/
