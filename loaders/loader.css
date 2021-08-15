@@ -272,7 +272,7 @@
 /***************** TILT TEXT ******************/
 
 .tilt-text{
-    margin-top: 20px;
+    margin-top: 40px;
     position: relative;
 }
 
@@ -281,8 +281,7 @@
 }
 .tilt-text span:nth-child(7){
     position: absolute;
-    /* transform: rotate(45deg); */
-    animation: bounce 7s ease-in-out infinite;
+    animation: bounce 4s ease-in-out infinite;
 }
 
 @keyframes bounce{
